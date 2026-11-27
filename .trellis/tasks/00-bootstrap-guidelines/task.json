@@ -1,0 +1,30 @@
+{
+  "id": "00-bootstrap-guidelines",
+  "name": "00-bootstrap-guidelines",
+  "title": "Bootstrap Guidelines",
+  "description": "从现有 Windows Go 采集器、Android App 和局域网协议提炼项目规范",
+  "status": "in_progress",
+  "dev_type": "docs",
+  "scope": null,
+  "package": null,
+  "priority": "P1",
+  "creator": "NightingaleWK",
+  "assignee": "NightingaleWK",
+  "createdAt": "2026-11-27",
+  "completedAt": null,
+  "branch": "trellis/bootstrap-guidelines",
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": null,
+  "relatedFiles": [
+    ".trellis/spec/backend/index.md",
+    ".trellis/spec/frontend/index.md",
+    ".trellis/spec/guides/index.md"
+  ],
+  "notes": "以 v0.2.3 为基线接入存量项目",
+  "meta": {}
+}

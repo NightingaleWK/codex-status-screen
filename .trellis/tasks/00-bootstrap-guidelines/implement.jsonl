@@ -1,0 +1,3 @@
+{"file": ".trellis/spec/backend/index.md", "reason": "定位现有 Windows Go 采集约定"}
+{"file": ".trellis/spec/frontend/index.md", "reason": "定位现有 Android 状态屏约定"}
+{"file": ".trellis/spec/guides/index.md", "reason": "定位跨层和复用检查"}
