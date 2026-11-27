@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+.codex-preview/
+
+# Local builds and credentials
+*.apk
+*.apk.idsig
+*.jks
+*.keystore
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+identity.json
+password.txt

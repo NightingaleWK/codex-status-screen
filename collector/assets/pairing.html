@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Codex 状态屏配对</title>
+<style>
+body{margin:0;background:#e9efec;color:#192725;font:16px/1.5 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:580px;margin:40px auto;padding:26px;background:#f8fbf9;border:1px solid #d1ded7;border-radius:22px}
+h1{margin:0;font-size:26px} p{margin:10px 0} .status{color:#275944}
+.code{width:278px;max-width:100%;height:auto;border-radius:13px;margin:12px 0;background:white}
+dl{display:grid;grid-template-columns:84px minmax(0,1fr);gap:7px 10px;margin:12px 0} dt{color:#4e6159}
+dd{margin:0;overflow-wrap:anywhere} a{color:#23594a;margin-right:9px} small{color:#4e6159}
+@media(max-width:640px){main{margin:14px;padding:18px}}
+</style>
+<main>
+  <h1>Codex 状态屏配对</h1>
+  <p>{{.Name}}</p>
+  <p class="status">{{.Status}}</p>
+  <p>在 Android App 的「添加设备」中扫码。</p>
+  <img class="code" src="{{.Image}}" alt="本机配对二维码">
+  <dl>
+    <dt>设备地址</dt><dd>{{.Endpoint}}</dd>
+    <dt>配对码</dt><dd>{{.Code}}</dd>
+    <dt>校验指纹</dt><dd>{{.Pin}}</dd>
+  </dl>
+  {{if gt (len .IPs) 1}}
+  <p>{{range .IPs}}<a href="/?host={{.}}">{{.}}</a>{{end}}</p>
+  {{end}}
+  <small>配对码使用一次后失效，有效期五分钟。再次配对时刷新此页。</small>
+</main>
+</html>
